@@ -23,3 +23,8 @@ You can install the dependencies directly by creating a conda environment.
 conda env create -f ecg_env.yml
 conda activate ecg_env
 ```  
+If using Mac, ensure you make the following command to ensure your tensorflow is updated
+
+``` 
+pip install tensorflow-macos
+```  
