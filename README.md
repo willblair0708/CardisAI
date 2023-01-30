@@ -55,6 +55,21 @@ ptbxl
           └── 21837_hr.hea
 ```          
 
+The dataset comprises 21837 clinical 12-lead ECG records of 10 seconds length from 18885 patients, where 52% are male and 48% are female with ages covering the whole range from 0 to 95 years (median 62 and interquantile range of 22). The value of the dataset results from the comprehensive collection of many different co-occurring pathologies, but also from a large proportion of healthy control samples.
+
+| Records | Superclass | Description |
+|:---|:---|:---|
+9528 | NORM | Normal ECG |
+5486 | MI | Myocardial Infarction |
+5250 | STTC | ST/T Change |
+4907 | CD | Conduction Disturbance |
+2655 | HYP | Hypertrophy |
+
+The waveform files are stored in WaveForm DataBase (WFDB) format with 16-bit precision at a resolution of 1μV/LSB and a sampling frequency of 500Hz (records500/) beside downsampled versions of the waveform data at a sampling frequency of 100Hz (records100/).
+
+All relevant metadata is stored in ptbxldatabase.csv with one row per record identified by ecgid and it contains 28 columns.
+
+All information related to the used annotation scheme is stored in a dedicated scp_statements.csv that was enriched with mappings to other annotation standards.
 
 # Requirements
 
