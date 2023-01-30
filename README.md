@@ -56,7 +56,13 @@ Download the dataset (PTB-XL) via the follwing bash-script:
 
     get_dataset.sh
 
-This script first downloads [PTB-XL from PhysioNet](https://physionet.org/content/ptb-xl/) and stores it in `data/ptbxl/`. 
+This script first downloads [PTB-XL from PhysioNet](https://physionet.org/content/ptb-xl/) and stores it in `data/ptbxl/`.
+
+If using Mac, ensure you make the following command to ensure your tensorflow is updated
+
+``` 
+pip install tensorflow-macos
+```  
 
 ## Usage
 
@@ -65,8 +71,4 @@ This script first downloads [PTB-XL from PhysioNet](https://physionet.org/conten
 This will perform all experiments for inception1d. 
 Depending on the executing environment, this will take up to several hours. 
   
-If using Mac, ensure you make the following command to ensure your tensorflow is updated
 
-``` 
-pip install tensorflow-macos
-```  
