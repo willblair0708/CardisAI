@@ -21,7 +21,7 @@ In the future, I hope to incoroporate a combination of all sensory data from pac
 
 ## Data Description
 
-The [PTB-XL ECG dataset](https://physionet.org/content/ptb-xl/1.0.1/) is a large dataset of 21837 clinical 12-lead ECGs from 18885 patients of 10 second length. The raw waveform data was annotated by up to two cardiologists, who assigned potentially multiple ECG statements to each record. In total 71 different ECG statements conform to the SCP-ECG standard and cover diagnostic, form, and rhythm statements. Combined with the extensive annotation, this turns the dataset into a rich resource for training and evaluating automatic ECG interpretation algorithms. The dataset is complemented by extensive metadata on demographics, infarction characteristics, likelihoods for diagnostic ECG statements, and annotated signal properties.
+The [PTB-XL ECG dataset](https://physionet.org/content/ptb-xl/1.0.1/) is a large collection of 21837 clinical 12-lead ECGs, each 10 seconds in length, from 18885 patients. The raw waveform data has been labeled by up to two cardiologists, who added multiple ECG statements per record. The dataset includes 71 different ECG statements that adhere to the SCP-ECG standard and include diagnostic, form, and rhythm statements. This extensive annotation makes the dataset useful for training and testing algorithms for automatic ECG interpretation. Additionally, the dataset is augmented by metadata on demographics, infarction characteristics, likelihoods for diagnostic ECG statements, and annotated signal properties.
 
 In general, the dataset is organized as follows:
 
