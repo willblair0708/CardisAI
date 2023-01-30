@@ -3,14 +3,57 @@
 
 The goal of this model is to accurately predict heart attacks based on ECG data from pacemakers. Apps, such as MyCareLink by Medtronic, enable pacemaker patients to view sensory data from their pacemakers in real time. These apps do not, however, feature functionality for patients to understand this health data.
 
-For instance, how might an average patient perceive an image of an ECG?
+## Summary 
 
+Electrocardiography (ECG) is a key diagnostic tool to assess the cardiac condition of a patient. Automatic ECG interpretation algorithms as diagnosis support systems promise large reliefs for the medical personnel - only based on the number of ECGs that are routinely taken. However, the development of such algorithms requires large training datasets and clear benchmark procedures.
+
+For instance, how might an average patient perceive an image of an ECG?
 
 To most, this image has no functional importance. The use of AI, however, enables the potential for recognizing trends in ECG data from pacemakers to predict cardiac events, such as heart attacks, before they occur. This method is possible due to small changes in the Q-R-S movements in an ECG, which may indicate the development of plaque or atherosclerosis, and reveal negative trends in cardiac health. 
 
 CardisAI is trained on a large selection of ECG data from pacemakers in order to provide clear and actionable insights to patients and their clinicians. 
 
 In the future, I hope to incoroporate a combination of all sensory data from pacemakers (including accelerometers) to produce an improved pictrue of patient health. 
+
+## Data Description
+
+The [PTB-XL ECG dataset](https://physionet.org/content/ptb-xl/1.0.1/) is a large dataset of 21837 clinical 12-lead ECGs from 18885 patients of 10 second length. The raw waveform data was annotated by up to two cardiologists, who assigned potentially multiple ECG statements to each record. In total 71 different ECG statements conform to the SCP-ECG standard and cover diagnostic, form, and rhythm statements. Combined with the extensive annotation, this turns the dataset into a rich resource for training and evaluating automatic ECG interpretation algorithms. The dataset is complemented by extensive metadata on demographics, infarction characteristics, likelihoods for diagnostic ECG statements, and annotated signal properties.
+
+In general, the dataset is organized as follows:
+
+```
+ptbxl
+├── ptbxl_database.csv
+├── scp_statements.csv
+├── records100
+├── 00000
+│   │   ├── 00001_lr.dat
+│   │   ├── 00001_lr.hea
+│   │   ├── ...
+│   │   ├── 00999_lr.dat
+│   │   └── 00999_lr.hea
+│   ├── ...
+│   └── 21000
+│        ├── 21001_lr.dat
+│        ├── 21001_lr.hea
+│        ├── ...
+│        ├── 21837_lr.dat
+│        └── 21837_lr.hea
+└── records500
+   ├── 00000
+   │     ├── 00001_hr.dat
+   │     ├── 00001_hr.hea
+   │     ├── ...
+   │     ├── 00999_hr.dat
+   │     └── 00999_hr.hea
+   ├── ...
+   └── 21000
+          ├── 21001_hr.dat
+          ├── 21001_hr.hea
+          ├── ...
+          ├── 21837_hr.dat
+          └── 21837_hr.hea
+```          
 
 
 # Requirements
