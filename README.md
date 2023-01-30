@@ -19,7 +19,7 @@ CardisAI is trained on a large selection of ECG data from pacemakers in order to
 
 In the future, I hope to incoroporate a combination of all sensory data from pacemakers (including accelerometers) to produce an improved pictrue of patient health. 
 
-## Data Description
+## Dataset
 
 The [PTB-XL ECG dataset](https://physionet.org/content/ptb-xl/1.0.1/) is a large collection of 21837 clinical 12-lead ECGs, each 10 seconds in length, from 18885 patients. The raw waveform data has been labeled by up to two cardiologists, who added multiple ECG statements per record. The dataset includes 71 different ECG statements that adhere to the SCP-ECG standard and include diagnostic, form, and rhythm statements. This extensive annotation makes the dataset useful for training and testing algorithms for automatic ECG interpretation. Additionally, the dataset is augmented by metadata on demographics, infarction characteristics, likelihoods for diagnostic ECG statements, and annotated signal properties.
 
@@ -32,42 +32,6 @@ From the 18885 patients, 52% are male and 48% are female with ages covering the 
 5250 | STTC | ST/T Change |
 4907 | CD | Conduction Disturbance |
 2655 | HYP | Hypertrophy |
-
-In general, the dataset is organized as follows:
-
-```
-ptbxl
-├── ptbxl_database.csv
-├── scp_statements.csv
-├── records100
-├── 00000
-│   │   ├── 00001_lr.dat
-│   │   ├── 00001_lr.hea
-│   │   ├── ...
-│   │   ├── 00999_lr.dat
-│   │   └── 00999_lr.hea
-│   ├── ...
-│   └── 21000
-│        ├── 21001_lr.dat
-│        ├── 21001_lr.hea
-│        ├── ...
-│        ├── 21837_lr.dat
-│        └── 21837_lr.hea
-└── records500
-   ├── 00000
-   │     ├── 00001_hr.dat
-   │     ├── 00001_hr.hea
-   │     ├── ...
-   │     ├── 00999_hr.dat
-   │     └── 00999_hr.hea
-   ├── ...
-   └── 21000
-          ├── 21001_hr.dat
-          ├── 21001_hr.hea
-          ├── ...
-          ├── 21837_hr.dat
-          └── 21837_hr.hea
-```          
 
 
 The waveform files are stored in WaveForm DataBase (WFDB) format with 16-bit precision at a resolution of 1μV/LSB and a sampling frequency of 500Hz (records500/) beside downsampled versions of the waveform data at a sampling frequency of 100Hz (records100/).
