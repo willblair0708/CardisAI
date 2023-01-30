@@ -70,5 +70,18 @@ pip install tensorflow-macos
 
 This will perform all experiments for inception1d. 
 Depending on the executing environment, this will take up to several hours. 
+
+Once finished, all trained models, predictions and results are stored in `output/`, 
+where for each experiment a sub-folder is created each with `data/`, `models/` and `results/` sub-sub-folders. 
+
+| Model | AUC &darr; | Experiment |
+|:---|:---|:---|
+| inception1d | 0.927(00) | All statements |
+| inception1d | 0.929(00) | Diagnostic statements |
+| inception1d | 0.926(00) | Diagnostic subclasses |
+| inception1d | 0.919(00) | Diagnostic superclasses |
+| inception1d | 0.883(00) | Form statements |
+| inception1d | 0.949(00) | Rhythm statements |
+
   
 
