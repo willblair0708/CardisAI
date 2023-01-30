@@ -9,6 +9,10 @@ Electrocardiography (ECG) is a key diagnostic tool to assess the cardiac conditi
 
 For instance, how might an average patient perceive an image of an ECG?
 
+<div align="center">
+<img src="https://user-images.githubusercontent.com/46399191/191921241-495090db-a088-46b6-bd09-0f7f21170b0a.png" height="350"/>
+</div>
+
 To most, this image has no functional importance. The use of AI, however, enables the potential for recognizing trends in ECG data from pacemakers to predict cardiac events, such as heart attacks, before they occur. This method is possible due to small changes in the Q-R-S movements in an ECG, which may indicate the development of plaque or atherosclerosis, and reveal negative trends in cardiac health. 
 
 CardisAI is trained on a large selection of ECG data from pacemakers in order to provide clear and actionable insights to patients and their clinicians. 
