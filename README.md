@@ -48,8 +48,10 @@ You can install the dependencies directly by creating a conda environment.
 
 Install the dependencies (wfdb, pytorch, torchvision, cudatoolkit, fastai, fastprogress) by creating a conda environment:
 
-    conda env create -f requirements.yml
+    conda env export --name environment --file environment.yml
+    conda env create -f environment.yml
     conda activate autoecg_env
+    
 
 ### Get data
 Download the dataset (PTB-XL) via the follwing bash-script:
