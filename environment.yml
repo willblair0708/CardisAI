@@ -1,4 +1,4 @@
-name: environments
+name: environment11
 channels:
   - apple
   - pytorch
@@ -39,7 +39,7 @@ dependencies:
   - decorator=5.1.1
   - entrypoints=0.4
   - executing=0.8.3
-  - fastai=2.7.10
+  - fastai=1.0.61
   - fastcore=1.5.27
   - fastdownload=0.0.7
   - fastprogress=1.0.0
@@ -180,7 +180,7 @@ dependencies:
       - flatbuffers==22.11.23
       - google-auth==2.15.0
       - google-auth-oauthlib==0.4.6
-      - grpcio==1.51.1
+      - grpcio==1.26.0rc1
       - h5py==3.7.0
       - html5lib==0.9999999
       - importlib-metadata==5.1.0
@@ -206,3 +206,5 @@ dependencies:
       - werkzeug==2.2.2
       - wrapt==1.14.1
       - zipp==3.11.0
+      - scikit-image==0.19.3
+prefix: /Users/williamblair/miniforge3
